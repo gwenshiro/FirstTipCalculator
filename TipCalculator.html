@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Simple Tip Calculator!</title>
+  <link rel="stylesheet" href="tcStylesheet.css">
+</head>
+<body>
+  <div class="header">
+  <h1 class="Title">Tip Calculator</h1>
+  </div>
+<div class="container">
+  <!------input form information in here--->
+    <form id="tips">
+      <label>How much was your bill?<br><br>$</label>
+        <input type="number" min=1 id="billAmount" placeholder="Bill Amount">
+      <br><br>
+      <label>How was your service?<br><br></label>
+        <select id="service">
+          <option value="" disabled selected>--Choose an Option--</option>
+          <option value="20">Amazing</option>
+          <option value="15">Fair</option>
+          <option value="10">So-So</option>
+          <option value="5">Meh</option>
+          <option value="3">Erm...</option>
+        </select>
+        <br><br>
+        <label>How many people are sharing the bill?<br><br></label>
+          <input type="number" min=1 id="people" placeholder="Number of people">
+        <br><br>
+        <button type="submit" id="calculate">CALCULATE!</button>
+    </form>
+</div>
+<script>
+
+  //display result in alert box
+
+  document.getElementById('calculate').onclick = function() {
+  // upon clicking calculate, function to be executed.
+  var bill = document.getElementById("billAmount").value;
+
+  var serviceStandard = document.getElementById("service").value;
+
+  var billSplit = document.getElementById("people").value;
+
+  alert("You should be tipping roughly $" + ((bill*(serviceStandard/100))/billSplit) + " per person."); }
+
+</script>
+</body>

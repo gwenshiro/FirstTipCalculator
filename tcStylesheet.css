@@ -1,0 +1,56 @@
+html, body{
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://d1wb0ukcj65cfk.cloudfront.net/restaurant_original/2082b249-0f68-45e7-8f80-f2c77841882d.jpg);
+}
+
+.header {
+  width: 500px;
+  padding: 10px 20px 10px 20px;
+  margin-top:20vh;
+  border-radius:20px 20px 0px 0px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  background-color:black;
+  color:white;
+}
+
+
+.container {
+  width: 500px;
+  background-color:	#FFFAFA;
+  padding: 20px 20px 30px 20px;
+  border-radius:0px 0px 20px 20px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+
+
+h1 {
+    font-family:Arial;
+}
+
+input {
+  width:150px;
+}
+
+button {
+  width: 150px;
+  height:40px;
+  border-radius:5px;
+  background-color:#d3d3d3;
+  font-family:Arial;
+  font-weight: 600;
+  font-size:15px;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
